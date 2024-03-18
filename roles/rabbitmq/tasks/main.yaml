@@ -17,7 +17,7 @@
 
 - name: create rabbitmq user
   ansible.builtin.command: rabbitmqctl add_user roboshop roboshop123
-  state: present
+  #state: present
   #ignore_errors: yes #Ensure Rabbitmq user exists, ignore if user already exists
 
 - name: set permissions
